@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="btn.css" />
+    <title>Javascriptの屋敷</title>
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <!--innerは共通クラス-->
+      <div class="header-inner inner">
+        <h1 class="logo">
+          <a href="index.html"><img src="img/logo_black.png" alt="" /></a>
+        </h1>
+        <div class="header-links">
+          <nav class="menu">
+            <a href="">MEN</a>
+            <a href="">WOMAN</a>
+            <a href="">KIDS</a>
+          </nav>
+          <div class="controls">
+            <a href="" class="controls-cart"
+              ><img src="img/icon_cart_black.svg" alt="" />
+              <span class="cart-batch">1</span>
+            </a>
+          </div>
+        </div>
+        <form action="">
+          <button type="submit" class="word-submit"></button>
+          <input
+            type="text"
+            class="word-search"
+            placeholder="何かお探しですか？"
+            name="freeword"
+          />
+        </form>
+        <a href="#" class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </header>
+    <!-- ヘッダーここまで -->
+    <!--contents-->
+    <div class="contents">
+      <div class="inner item-detail">
+        <div class="item-detail-main">
+          <img src="img/item/12.png" alt="" />
+          <p class="mouse-note">画像にマウスを合わせると拡大します</p>
+        </div>
+        <div class="item-detail-info">
+          <h2 class="item-detail-name">シャツ</h2>
+          <div class="item-detail-brand">BRAND:<span>FFF</span></div>
+          <div class="item-size">
+            <div class="item-size-select">Select Size:<span>130</span></div>
+            <ul class="item-size-list">
+              <li>130</li>
+              <li>140</li>
+              <li>150</li>
+              <li>160</li>
+              <li>170</li>
+              <li>180</li>
+              <li>190</li>
+            </ul>
+          </div>
+          <div class="item-detail-price"><span>\4200</span></div>
+          <div class="btn btn--cart"><span>カートに追加する</span></div>
+          <div class="btn btn--fav"><span>お気に入りに入れる</span></div>
+          <div data-accordion="trigger">商品の説明を見る</div>
+          <div data-accordion="target">ダミーダミーダミーダミーダミーダミー</div>
+        </div>
+      </div>
+      <!-- 詳細ここまで -->
+      <div class="inner">
+        <!-- レビュー -->
+        <section class="c-section">
+          <div class="c-section-head">
+            <h2 class="c-section-title">レビューをする</h2>
+          </div>
+          <ul class="review">
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+          </ul>
+        </section>
+        <!-- レビューここまで -->
+        <!-- PICKUP -->
+        <section class="c-section">
+          <div class="c-section-head">
+            <h2 class="c-section-title">PICK UP</h2>
+          </div>
+          <ul class="item-list thumbnail-list">
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/34.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">ワンピース</h3>
+                  <h3 class="item-text">
+                    可愛い花柄の赤いワンピース！胸元もひらいていて、夏季などでも爽快感のあるアイテムです
+                  </h3>
+                  <div class="item-price">¥1000</div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/39.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">タイトスカート</h3>
+                  <h3 class="item-text">
+                    清楚なタイトスカート。カラーは赤、青、白、黒の4種類あります
+                  </h3>
+                  <div class="item-price">¥7600</div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/45.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">シャツ</h3>
+                  <h3 class="item-text">
+                    伸縮性のあるウール素材のシャツ。24種のカラーから選べます
+                  </h3>
+                  <div class="item-price">¥3400</div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/48.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">シャツ</h3>
+                  <h3 class="item-text">
+                    清楚感のあるホワイトをベースにお洒落なコモン柄のゆったりしたシャツ
+                  </h3>
+                  <div class="item-price">¥5600</div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/58.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">シャツ</h3>
+                  <h3 class="item-text">
+                    タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう
+                  </h3>
+                  <div class="item-price">¥2200</div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/22.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">シャツ</h3>
+                  <h3 class="item-text">
+                    タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう
+                  </h3>
+                  <div class="item-price">¥2200</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- PICKUPここまで -->
+        <!-- お気に入り -->
+        <section class="c-section">
+          <div class="c-section-head">
+            <h2 class="c-section-title">お気に入りしたアイテム♡</h2>
+          </div>
+          <ul class="item-list">
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/58.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">シャツ</h3>
+                  <h3 class="item-text">
+                    タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう
+                  </h3>
+                  <div class="item-price">¥2200</div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/22.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">シャツ</h3>
+                  <h3 class="item-text">
+                    タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう
+                  </h3>
+                  <div class="item-price">¥2200</div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/12.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">シャツ</h3>
+                  <h3 class="item-text">
+                    タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう
+                  </h3>
+                  <div class="item-price">¥2200</div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/11.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">シャツ</h3>
+                  <h3 class="item-text">
+                    タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう
+                  </h3>
+                  <div class="item-price">¥2200</div>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <div class="item-cap">
+                  <img src="./img/item/25.png" loading="lazy" />
+                </div>
+                <div class="item-info">
+                  <h3 class="item-name">シャツ</h3>
+                  <h3 class="item-text">
+                    タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう
+                  </h3>
+                  <div class="item-price">¥2200</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- お気に入りここまで -->
+      </div>
+      <!-- innerここまで -->
+    </div>
+    <!--contentsここまで-->
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="footer-inner inner">
+        <div class="footer-logo">NINCO</div>
+        <ul class="sns">
+          <li>
+            <a href=""
+              ><img src="img/facebook.png" alt="" class="sns-icon" /><span
+                class="sns-name"
+                >Facebook</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/twitter.png" alt="" class="sns-icon" /><span
+                class="sns-name"
+                >Twitter</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/instagram.png" alt="" class="sns-icon" /><span
+                class="sns-name"
+                >Instagram</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <ul class="footer-link">
+        <li><a href="">ヘルプ</a></li>
+        <li><a href="">お問い合わせ</a></li>
+        <li><a href="">利用規約</a></li>
+        <li><a href="">採用情報</a></li>
+        <li><a href="">© NINCO Co., Ltd.</a></li>
+      </ul>
+    </footer>
+    <!-- フッターここまで -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

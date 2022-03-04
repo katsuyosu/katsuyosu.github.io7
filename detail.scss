@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+// 詳細全体
+.item-detail {
+  margin: 30px auto 80px auto;
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 30px;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+  &-main {
+    width: 50%;
+    margin-right: 3%;
+
+    .mouse-note {
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+}
+// 詳細全体ここまで
+// 情報部分
+.item-detail {
+  &-info {
+    width: 47%;
+  }
+  &-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &-brand {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .item-size {
+    margin-bottom: 20px;
+    font-size: 18px;
+    li {
+      border-radius: 5px;
+      background-color: #fff;
+      display: inline-block;
+      padding: 5px 20px;
+      font-weight: bold;
+      font-size: 16px;
+      border: 1px solid #e5e5e5;
+      cursor: pointer;
+      margin-bottom: 3px;
+    }
+    li.is-active {
+      background-color: #333;
+      color: #fff;
+    }
+    &-select {
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+  }
+  &-price {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  [data-accordion="trigger"]{
+    margin-top: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    &::before{
+      content: "▼";
+      display: inline-block;
+      margin-right: 6px;
+    }
+  }
+  [data-accordion="trigger"].is-active::before{
+    content: "―";
+  }
+  [data-accordion="target"]{
+    margin-top: 18px;
+    display: none;
+  }
+}
+// 情報部分ここまで
+// レビュー
+.review {
+  display: flex;
+  font-size: 30px;
+
+  li {
+    margin-right: 20px;
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  li.is-active {
+    color: #ffc107;
+  }
+}
+// レビューここまで
+
+@media screen and (max-width: 768px) {
+  // 詳細全体
+  .item-detail {
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    margin-bottom: 80px;
+
+    &-main {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  // 詳細全体ここまで
+  // 情報部分
+  .item-detail {
+    &-info {
+      width: auto;
+    }
+    &-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    &-brand {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .item-size {
+      margin-bottom: 20px;
+      font-size: 18px;
+      li {
+        border-radius: 5px;
+        background-color: #fff;
+        display: inline-block;
+        padding: 5px 20px;
+        font-weight: bold;
+        font-size: 16px;
+        border: 1px solid #e5e5e5;
+        cursor: pointer;
+        margin-bottom: 3px;
+      }
+      li.is-active {
+        background-color: #333;
+        color: #fff;
+      }
+      &-select {
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+    }
+    &-price {
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+  }
+  // 情報部分ここまで
+  // レビュー
+  .review {
+    display: flex;
+    font-size: 30px;
+
+    li {
+      margin-right: 20px;
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    li.is-active {
+      color: #ffc107;
+    }
+  }
+  // レビューここまで
+}
